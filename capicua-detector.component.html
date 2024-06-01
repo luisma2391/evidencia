@@ -1,0 +1,10 @@
+<div>
+    <label for="numberInput">Ingrese un número:</label>
+    <input id="numberInput" type="text" [(ngModel)]="inputNumber" (input)="checkCapicua()">
+  </div>
+  <div *ngIf="isCapicua === true">
+    El número {{ inputNumber }} es capicúa.
+  </div>
+  <div *ngIf="isCapicua === false">
+    El número {{ inputNumber }} no es capicúa.
+  </div>
